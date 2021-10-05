@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, Comment, User } = require('../models/');
+const { Post, Recipe, User } = require('../models/');
 
 // get all posts for homepage
 router.get('/', async (req, res) => {
@@ -23,7 +23,7 @@ router.get('/post/:id', async (req, res) => {
       include: [
         User,
         {
-          model: Comment,
+          model: Recipe,
           include: [User],
         },
       ],
