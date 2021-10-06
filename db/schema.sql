@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS creative_recipe_db;
-
-CREATE DATABASE creative_recipe_db;
+DROP DATABASE IF EXISTS techblog_db;
+CREATE DATABASE techblog_db;
